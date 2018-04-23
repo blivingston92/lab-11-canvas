@@ -12,7 +12,7 @@
 		var context = sketch.getContext("2d");
 
 		var radius = prompt("Enter a radius")
-		//parseInt
+		var r_num = parseInt(radius,10);
 		var color = prompt("Enter a color")
 		
 		if (color == "red") {
@@ -27,7 +27,7 @@
 		}
 		
 		context.beginPath();
-		context.arc(150, 150, radius, 0, 2 * Math.PI, true);
+		context.arc(150, 150, r_num, 0, 2 * Math.PI, true);
 		context.closePath();
 		context.fill();
 	}
